@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iron Discipline System</title>
+    <meta name="description" content="Track violations and maintain discipline" />
+    <meta name="theme-color" content="#FF6B6B" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Tailwind CDN for utility CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-blue-50">
+    <div id="app" class="min-h-screen p-4 max-w-4xl mx-auto">
+        <!-- Your content and UI placeholders here -->
+        <header>
+            <h1 class="text-4xl font-bold gradient-text mb-4 text-center">⚡ IRON DISCIPLINE SYSTEM</h1>
+            <p class="text-center text-gray-600 mb-6">Forge yourself through fire and discipline</p>
+            <nav class="flex justify-center gap-3 mb-8">
+                <button data-tab="dashboard" class="tab-btn active">Dashboard</button>
+                <button data-tab="rules" class="tab-btn">Rules</button>
+                <button data-tab="logs" class="tab-btn">Logs</button>
+                <button data-tab="charts" class="tab-btn">Charts</button>
+                <button data-tab="history" class="tab-btn">History</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="dashboard-content"></section>
+            <section id="rules-content" class="hidden"></section>
+            <section id="logs-content" class="hidden"></section>
+            <section id="charts-content" class="hidden"></section>
+            <section id="history-content" class="hidden"></section>
+        </main>
+
+        <div id="status" class="fixed bottom-4 left-4 bg-blue-100 border border-blue-400 text-blue-700 px-4 py-2 rounded-lg shadow-lg text-sm">
+            Status: 🔄 Ready
+        </div>
+    </div>
+
+    <!-- Export & Log Modals will be injected by JS -->
+
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
