@@ -1,0 +1,16 @@
+{
+  "name": "Iron Discipline System",
+  "short_name": "IronDiscipline",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF6B6B",
+  "description": "Track violations and maintain discipline",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
